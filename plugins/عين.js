@@ -1,31 +1,30 @@
 let timeout = 60000
 let poin = 500
 let handler = async (m, { conn, command, usedPrefix }) => {
-    conn.tebakbendera = conn.tebakbendera ? conn.tebakbendera : {}
+    conn.tokitoki = conn.tokitoki ? conn.tokitoki : {}
     let id = m.chat
-    if (id in conn.tebakbendera) {
-        conn.reply(m.chat, '❐┃لم يتم الاجابة علي السؤال بعد┃❌ ❯', conn.tebakbendera[id][0])
+    if (id in conn.tokitoki) {
+        conn.reply(m.chat, '*صبر ما تشوف فيه سؤال ؟*', conn.tokitoki[id][0])
         throw false
     }
-    let src = await (await fetch('https://gist.githubusercontent.com/YosefZoro1/2e1ba4a3f14368c5620ef099ac21bcdb/raw/294a1b3e4114f4937382a285534bdcacc06917de/game6.json')).json()
+    let src = await (await fetch('https://raw.githubusercontent.com/Aurtherle/Games/main/.github/workflows/eyeanime.json')).json()
   let json = src[Math.floor(Math.random() * src.length)]
-    let caption = `*${command.toUpperCase()}*
-  ❐↞┇الـوقـت⏳↞ *${(timeout / 1000).toFixed(2)} ┇
-  *استخدم .انسحب للأنسحاب*
-  ❐↞┇الـجـائـزة💰↞ ${poin} نقاط┇
-『𝙕𝙊𝙍𝙊-𝘽𝙊𝙏』
+    let caption = `*❃ ──────⊰ ❀ ⊱────── ❃*\n*عين من ؟؟*\n
+  *الوقت :* *${(timeout / 1000).toFixed(2)}* *ثانية*
+   *الجائزة :* *${poin}* *بيلي*
+*❃ ──────⊰ ❀ ⊱────── ❃*
      `.trim()
-    conn.tebakbendera[id] = [
+    conn.tokitoki[id] = [
         await conn.sendFile(m.chat, json.img, '', caption, m),
         json, poin,
         setTimeout(() => {
-            if (conn.tebakbendera[id]) conn.reply(m.chat, `❮ ⌛┇انتهي الوقت┇⌛❯\n❐↞┇الاجـابـة✅↞ ${json.name}*┇`, conn.tebakbendera[id][0])
-            delete conn.tebakbendera[id]
+            if (conn.tokitoki[id]) conn.reply(m.chat, `*❃ ──────⊰ ❀ ⊱────── ❃*\n*خلص الوقت*\n*الجواب :* *( ${json.name} )*\n*❃ ──────⊰ ❀ ⊱────── ❃*`, conn.tokitoki[id][0])
+            delete conn.tokitoki[id]
         }, timeout)
     ]
 }
-handler.help = ['guessflag']
+handler.help = ['guesseye']
 handler.tags = ['game']
-handler.command = /^عين/i
+handler.command = /^ع|عين/i
 
 export default handler
