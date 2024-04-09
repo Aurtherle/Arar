@@ -7,8 +7,8 @@ const { levelling } = '../lib/levelling.js'
 import moment from 'moment-timezone'
 import { promises } from 'fs'
 import { join } from 'path'
-const time = moment.tz('Asia/Riyadh).format('HH')
-let wib = moment.tz('Asia/Riyadh).format('HH:mm:ss')
+const time = moment.tz('Africa/Egypt').format('HH')
+let wib = moment.tz('Africa/Egypt').format('HH:mm:ss')
 //import db from '../lib/database.js'
 
 let handler = async (m, { conn, usedPrefix, command}) => {
@@ -37,8 +37,7 @@ let readMore = more.repeat(850)
 let taguser = '@' + m.sender.split("@s.whatsapp.net")[0]
 global.fcontact = { key: { fromMe: false, participant: `0@s.whatsapp.net`, remoteJid: 'status@broadcast' }, message: { contactMessage: { displayName: `${name}`, vcard: `BEGIN:VCARD\nVERSION:3.0\nN:;a,;;;\nFN:${name}\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`}}}
     m.react('📃')
-    const str = `
-*❃ ──────⊰ ❀ ⊱────── ❃*
+    const str = `*❃ ──────⊰ ❀ ⊱────── ❃*
 *◍ مرحــبـا ⌊${name}⌉*
 *❃ ──────⊰ ❀ ⊱────── ❃*
 
