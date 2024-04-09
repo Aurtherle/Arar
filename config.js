@@ -23,7 +23,7 @@ global.lenguajeGB = ar  //Idioma de The-LoliBot-MD, Ejemplo: es | en | pt...
 // Sticker WM
 global.botname = 'AURTHER'
 global.premium = 'true'
-global.menuvid = 'https://i.imgur.com/uiwALih.mp4'
+global.menuvid = 'https://telegra.ph/file/5c07b3268b81043a02ad3.mp4'
 global.igfg = '..' 
 global.dygp = '..'
 global.fgsc = '..' 
