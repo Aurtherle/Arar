@@ -11,52 +11,34 @@ import { en, es, id, ar, pt } from './lib/idiomas/total-idiomas.js'
 global.botnumber = ""
 
 global.owner = [
-  ['201032389641', '𝑍𝑂𝑅𝑂⚡3𝑀𝐾', true],
-  ['201032389641', '𝑍𝑂𝑅𝑂⚡3𝑀𝐾', true],
-  ['201032389641', '𝑍𝑂𝑅𝑂⚡3𝑀𝐾', true],
-  ['201032389641', '𝑍𝑂𝑅𝑂⚡3𝑀𝐾', true],
-  ['201032389641', '𝑍𝑂𝑅𝑂⚡3𝑀𝐾', true],
-  ['201032389641', '𝑍𝑂𝑅𝑂⚡3𝑀𝐾', true],
-  ['201032389641', '𝑍𝑂𝑅𝑂⚡3𝑀𝐾', true],
-  ['201032389641', '𝑍𝑂𝑅𝑂⚡3𝑀𝐾', false],
-  ['201032389641', '𝑍𝑂𝑅𝑂⚡3𝑀𝐾', true],
-  ['201032389641','𝑍𝑂𝑅𝑂⚡3𝑀𝐾', true],
-  ['201032389641'],
-  ['201032389641'],
-  ['201032389641'],
-  ['201032389641'],
-  ['201032389641'],
-  ['201032389641'],
-  ['201032389641'],
-  ['201032389641'], 
-  ['201032389641'],  
-  ['201032389641'], 
-  ['201032389641']
+  ['212684151146', 'ARTHUR', true],
+  ['212684151146', 'ARTHUR', true],
+  ['212684151146']
 ];
 
-global.suittag = ['201032389641'];
-global.prems = ['201032389641'];
+global.suittag = ['212684151146'];
+global.prems = ['212684151146'];
 
 global.lenguajeGB = ar  //Idioma de The-LoliBot-MD, Ejemplo: es | en | pt...
 // Sticker WM
-global.botname = '𝒁𝑶𝑹𝑶'
+global.botname = 'AURTHER'
 global.premium = 'true'
 global.menuvid = 'https://i.imgur.com/uiwALih.mp4'
-global.igfg = 'https://solo.to/yosef.zoro' 
-global.dygp = 'https://solo.to/yosef.zoro'
-global.fgsc = 'https://solo.to/yosef.zoro' 
-global.fgyt = 'https://youtube.com/@The-ZoroBot-MD?si=DncZQM6sKC0F6MhG'
-global.fgpyp = 'https://youtube.com/@The-ZoroBot-MD?si=DncZQM6sKC0F6MhG'
-global.fglog = 'https://solo.to/yosef.zoro' 
+global.igfg = '..' 
+global.dygp = '..'
+global.fgsc = '..' 
+global.fgyt = '..'
+global.fgpyp = '..'
+global.fglog = '..' 
 global.thumb = fs.readFileSync('./Menu2.jpg')
 
 
-global.packname = '𝐵𝑌:𝑍𝑂𝑅𝑂⚡𝐵𝑂𝑇';
-global.author = '𝑌𝛩𝑺𝐸𝐹⚡3𝑀𝐾';
-global.wm = '𝑍𝑂𝑅𝑂 - 𝐵𝑂𝑇';
-global.titulowm = '𝑍𝑂𝑅𝑂 - 𝐵𝑂𝑇';
-global.titulowm2 = `𝑍𝑂𝑅𝑂 - 𝐵𝑂𝑇`
-global.igfg = '𝑍𝑂𝑅𝑂 - 𝐵𝑂𝑇';
+global.packname = 'AURTHER';
+global.author = 'AURTHER';
+global.wm = 'AURTHER';
+global.titulowm = 'AURTHER';
+global.titulowm2 = `AURTHER`
+global.igfg = 'AURTHER';
 global.wait = '*[ ⏳ ] انتظر...*';
 
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ رياكت
@@ -86,15 +68,15 @@ global.mes = d.toLocaleDateString('ar', {month: 'long'});
 global.año = d.toLocaleDateString('ar', {year: 'numeric'});
 global.tiempo = d.toLocaleString('ar-US', {hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true});
 //* ****************************
-global.wm2 = `▸ ${dia} ${fecha}\n▸ 𝐵𝑌:𝑍𝑂𝑅𝑂⚡𝐵𝑂𝑇`;
-global.gt = '𝐵𝑌:𝑍𝑂𝑅𝑂⚡𝐵𝑂𝑇';
-global.mysticbot = '𝐵𝑌:𝑍𝑂𝑅𝑂⚡𝐵𝑂𝑇';
-global.md = 'https://solo.to/yosef.zoro';
-global.mysticbot = 'https://solo.to/yosef.zoro';
+global.wm2 = `▸ ${dia} ${fecha}\n▸ BY:AURTHER`;
+global.gt = 'AURTHER';
+global.mysticbot = 'AURTHER';
+global.md = '..';
+global.mysticbot = '..';
 global.waitt = '*⌛ _جاري التحميل..._ ▬▬▭▭▭*';
 global.waittt = '*⌛ _جاري التحميل..._ ▬▬▬▬▭▭*';
 global.waitttt = '*⌛ _جاري التحميل..._ ▬▬▬▬▬▬▭*';
-global.nomorown = '201032389641';
+global.nomorown = '212684151146';
 global.pdoc = ['application/vnd.openxmlformats-officedocument.presentationml.presentation', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'application/vnd.ms-excel', 'application/msword', 'application/pdf', 'text/rtf'];
 global.cmenut = '❖––––––『';
 global.cmenub = '┊✦ ';
