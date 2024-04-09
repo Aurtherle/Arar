@@ -19,8 +19,6 @@ conn.sendFile(m.chat, yt_play[0].thumbnail, 'thumbnail.jpg', `
 
 *⏰ المدة:* ${secondString(yt_play[0].duration.seconds)}
 *👉🏻 انتظر لحظة حتى أرسل ${additionalText}*
-*انت مسؤل عن ذنوب اغانيك*
-*𝑍𝑂𝑅𝑂⚡3𝑀𝐾*
 `.trim(), m)
 if (command == 'اغنيه') {	
 try {
