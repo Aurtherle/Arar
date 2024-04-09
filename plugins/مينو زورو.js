@@ -6,8 +6,8 @@ const { levelling } = '../lib/levelling.js'
 import moment from 'moment-timezone'
 import { promises } from 'fs'
 import { join } from 'path'
-const time = moment.tz('Egypt').format('HH')
-let wib = moment.tz('Egypt').format('HH:mm:ss')
+const time = moment.tz('Riyadh).format('HH')
+let wib = moment.tz('Riyadh).format('HH:mm:ss')
 //import db from '../lib/database.js'
 
 let handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems}) => {
@@ -22,8 +22,8 @@ if (!(who in global.db.data.users)) throw `✳️ The user is not found in my da
 let videoUrl = 'https://telegra.ph/file/5c07b3268b81043a02ad3.mp4';
   let vn = './media/menu.mp3';
   const user = global.db.data.users[m.sender];
-  const {money, joincount} = global.db.data.users[m.sender];
-  const {exp, limit, level, role} = 
+let {money, joincount} = global.db.data.users[m.sender];
+let { name, exp, diamond, lastclaim, registered, regTime, age, level, role, warn } = global.db.data.users[who]
     global.db.data.users[m.sender];
 let { min, xp, max } = xpRange(user.level, global.multiplier)
 let username = conn.getName(who)
