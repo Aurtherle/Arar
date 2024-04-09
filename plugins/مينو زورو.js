@@ -36,7 +36,7 @@ let readMore = more.repeat(900)
   const taguser = '@' +  m.sender.split('@s.whatsapp.net')[0];
 let str = `
 *❃ ──────⊰ ❀ ⊱────── ❃*
-*✬⃝╿↵ مرحــبـا ⌊${name}⌉*
+*✬⃝╿↵ مرحــبـا ⌊${taguser}⌉*
 *❃ ──────⊰ ❀ ⊱────── ❃*
 ┏━━━━━━━━━━━━━━━━┓
 ┃ *< إعدادات البوت >*
