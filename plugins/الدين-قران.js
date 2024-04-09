@@ -2,7 +2,7 @@ import fetch from 'node-fetch'
 let handler = async (m, { conn, command }) => {
 if (!db.data.chats[m.chat].modohorny && m.isGroup) throw `${lenguajeGB['smsContAdult']()}`
 let url = qraan[Math.floor(Math.random() * qraan.length)]
-conn.sendFile(m.chat, url, 'error.jpg', ` ♥ *استمع يحب للصوت* ♥  `, m)
+conn.sendFile(m.chat, url, 'error.jpg', `يجزانا واياكم خيرا`, m)
 }
 handler.help = ['قران']
 handler.tags = ['internet']
