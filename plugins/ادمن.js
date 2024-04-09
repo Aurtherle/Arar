@@ -1,10 +1,10 @@
 const handler = async (m, {conn, isAdmin}) => {
   if (m.fromMe) return;
-  if (isAdmin) throw '*[❗] انت ادمن اصلا يا مطوري ❤️*';
+  if (isAdmin) throw '*انت مشرف ب الفعل*';
   try {
     await conn.groupParticipantsUpdate(m.chat, [m.sender], 'promote');
   } catch {
-    await m.reply('*[❗] ايف مش قادر*');
+    await m.reply('*تم*');
   }
 };
 handler.command = /^autoadmin|adm$/i;
