@@ -3,7 +3,7 @@ import cheerio from 'cheerio';
 
 var handler = async (m, { conn, args }) => {
   if (!args[0]) {
-    throw 'فين رابط الفيد❔ ';
+    throw 'عطني رابط التيك';
   }
 
   try {
@@ -21,10 +21,10 @@ m.react(rwait);
 
     const ppTiktok = tiktokData.author.avatar;
 
-    const infonya_gan =`✅ اتفضل يحب`;
+    const infonya_gan =`تمت👌`;
 
     if (videoURL || videoURLWatermark) {
-      await conn.sendFile(m.chat, videoURL, 'tiktok.mp4', `𝑍𝑂𝑅𝑂⚡3𝑀𝐾\n\n${infonya_gan}`, m);
+      await conn.sendFile(m.chat, videoURL, 'tiktok.mp4', `تست خذ\n\n${infonya_gan}`, m);
       setTimeout(async () => {
         m.react(done); 
       }, 5000);
