@@ -1,6 +1,7 @@
 // Update By Xnuvers007
 
 import fetch from 'node-fetch'
+import { translate } from '@vitalets/google-translate-api'
 
 var handler = async (m, { conn, text }) => {
 if (!text) throw `*أدخل عنوان المانغا الذي تريد البحث عنه!*`
@@ -14,12 +15,16 @@ let { chapters, url, type, score, scored, scored_by, rank, popularity, members, 
 let judul = json.data[0].titles.map(jud => `${jud.title} [${jud.type}]`).join('\n');
 let xnuvers007 = json.data[0].authors.map(Xnuvers007 => `${Xnuvers007.name} (${Xnuvers007.url})`).join('\n');
 let genrenya = json.data[0].genres.map(xnvrs007 => `${xnvrs007.name}`).join('\n');
-  
+
+let translatedBackground = await translate(background, { to: 'ar' });
+let translatedSynopsis = await translate(synopsis, { to: 'ar' });
+
+// Update the response with the translated background and synopsis
 let animeingfo = `📚 *العنوان:* ${judul}
 📑 *الفصول:* ${chapters}
-✉️ *نوع النقل:* ${type}
+✉️ *النوع:* ${type}
 🗂 *الحالة:* ${status}
-😎 *النوع:* ${genrenya}
+😎 *التصنيف:* ${genrenya}
 🗃 *المجلدات:* ${volumes}
 🌟 *المفضلة:* ${favorites}
 🧮 *التقييم:* ${score}
@@ -30,11 +35,11 @@ let animeingfo = `📚 *العنوان:* ${judul}
 👥 *الأعضاء:* ${members}
 ⛓️ *الرابط:* ${url}
 👨‍🔬 *المؤلفون:* ${xnuvers007}
-📝 *الخلفية:* ${background}
-💬 *الملخص:* ${synopsis}
+📝 *الخلفية:* ${translatedBackground.text}
+💬 *الملخص:* ${translatedSynopsis.text}
 `
 conn.sendFile(m.chat, json.data[0].images.jpg.image_url, 'manga.jpg', `*معلومات المانغا*\n` + animeingfo, m)
-    conn.reply(m.chat, 'لا تنسى دعم المطور\nZORO\npaypal.me/Yosef160', m)
+    conn.reply(m.chat, 'اصبر شويتين', m)
 }
 handler.help = ['mangainfo <manga>', 'manga <namaManga>', 'infomanga <NamaManga/Anime>']
 handler.tags = ['anime']
